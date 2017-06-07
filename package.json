@@ -1,0 +1,19 @@
+{
+  "name": "node_obd",
+  "version": "0.1.0",
+  "description": "node js OBDII interface",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "SET NODE_ENV=development & nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "obd-parser": "^0.3.0",
+    "obd-parser-serial-connection": "^0.1.2",
+    "socket.io": "^1.7.3"
+  }
+}
