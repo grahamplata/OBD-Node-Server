@@ -8,10 +8,8 @@ var path = require('path');
 
 
 // If developement mode use fake-obd, if production use comm
-var getConnector = require('obd-parser-serial-connection');
-if (process.env.NODE_ENV != "development") {
-    var getConnector = require('obd-parser-development-connection');
-}
+// var getConnector = require('obd-parser-serial-connection');
+var getConnector = require('obd-parser-development-connection');
 
 // Serial connections settings
 var connect = getConnector({
